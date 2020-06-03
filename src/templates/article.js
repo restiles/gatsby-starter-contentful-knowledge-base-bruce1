@@ -162,9 +162,7 @@ export const query = graphql`
     article: contentfulKbAppArticle(id: { eq: $id }) {
       title
       slug
-      description {
-        description
-      }
+      description: metaDescription
       body {
         json
       }

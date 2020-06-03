@@ -147,9 +147,7 @@ export const query = graphql`
 
     category: contentfulKbAppCategory(id: { eq: $id }) {
       name
-      description {
-        description
-      }
+      description: previewDescription
       slug
       articles: kbapparticle {
         title

@@ -108,9 +108,7 @@ export const query = graphql`
     categories: allContentfulKbAppCategory {
       nodes {
         name
-        description {
-          description
-        }
+        description: previewDescription
         slug
         articles: kbapparticle {
           id
